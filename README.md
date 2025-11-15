@@ -155,6 +155,6 @@ Questions, suggestions, or feedback? Please open an issue or contact the reposit
 
 **Note**: This is a citizen-proposed framework. No official government or international body has endorsed this protocol. In the event of actual extraterrestrial contact, follow official guidance from your local authorities and international organizations.
 
-**Last Updated**: 2024
+**Last Updated**: 2025
 
 **Version**: 3.0
