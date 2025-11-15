@@ -89,6 +89,7 @@
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            scroll-margin-top: 80px;
         }
         
         h2 {
@@ -101,14 +102,14 @@
         
         h3 {
             color: #0f4c81;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-top: 1.5rem;
             margin-bottom: 1rem;
         }
         
         h4 {
             color: #1a1a2e;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-top: 1rem;
             margin-bottom: 0.5rem;
         }
@@ -129,10 +130,6 @@
             border-radius: 4px;
         }
         
-        .critical strong {
-            color: #c62828;
-        }
-        
         ul, ol {
             margin-left: 2rem;
             margin-bottom: 1rem;
@@ -146,10 +143,11 @@
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
+            font-size: 0.95rem;
         }
         
         th, td {
-            padding: 1rem;
+            padding: 0.75rem;
             text-align: left;
             border: 1px solid #ddd;
         }
@@ -164,41 +162,12 @@
             background: #f5f5f5;
         }
         
-        .phase {
-            background: #f8f9fa;
-            border: 2px solid #0f4c81;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-        
-        .phase-title {
-            background: #0f4c81;
-            color: white;
-            padding: 0.75rem 1rem;
-            margin: -1.5rem -1.5rem 1rem -1.5rem;
-            border-radius: 6px 6px 0 0;
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-        
         footer {
             background: #1a1a2e;
             color: white;
             text-align: center;
             padding: 2rem;
             margin-top: 3rem;
-        }
-        
-        .tag {
-            display: inline-block;
-            background: #0f4c81;
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 12px;
-            font-size: 0.9rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
         }
         
         @media (max-width: 768px) {
@@ -217,519 +186,553 @@
             section {
                 padding: 1.5rem;
             }
+            
+            table {
+                font-size: 0.85rem;
+            }
+            
+            th, td {
+                padding: 0.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>🛸 Alien Arrival Protocol</h1>
-        <p class="subtitle">Comprehensive Response Procedures for Extraterrestrial Physical Contact on Earth</p>
+        <p class="subtitle">Comprehensive Response Procedures for Extraterrestrial Physical Contact</p>
     </header>
     
     <div class="disclaimer">
-        <strong>⚠️ IMPORTANT DISCLAIMER:</strong> As of this document's creation, there is <strong>no official international procedure or protocol</strong> for physical alien arrival on Earth. This document represents a proposed framework combining emergency response best practices, scientific protocols, and diplomatic considerations. While SETI (Search for Extraterrestrial Intelligence) and CETI (Communication with Extraterrestrial Intelligence) exist for signal detection, physical contact protocols remain undefined.
+        <strong>⚠️ DISCLAIMER:</strong> As of this document's creation, there is <strong>no official international procedure</strong> for physical alien arrival on Earth. This represents a proposed framework based on emergency response, scientific, and diplomatic best practices.
     </div>
     
     <nav>
         <ul>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#immediate">Immediate Response</a></li>
-            <li><a href="#scenarios">Scenarios</a></li>
             <li><a href="#containment">Containment</a></li>
             <li><a href="#communication">Communication</a></li>
             <li><a href="#diplomatic">Diplomatic</a></li>
-            <li><a href="#long-term">Long-Term</a></li>
-            <li><a href="#special">Special Situations</a></li>
+            <li><a href="#longterm">Long-Term</a></li>
+            <li><a href="#special">Special Cases</a></li>
         </ul>
     </nav>
     
     <div class="container">
         <section id="overview">
             <h2>Protocol Overview</h2>
-            <p>This protocol addresses two primary scenarios of alien arrival on Earth:</p>
             
             <div class="scenario-box">
                 <h3>Scenario 1: Crashed Ship</h3>
-                <p><strong>Indicators:</strong> Distress signals, uncontrolled descent, impact damage, potential injuries</p>
-                <p><strong>Assumptions:</strong> Aliens may be in distress, refugees, fugitives, or experiencing technical failure</p>
-                <p><strong>Primary Concerns:</strong> Immediate hazards, contamination, injury response, securing crash site</p>
+                <p><strong>Indicators:</strong> Distress, uncontrolled descent, impact damage, potential injuries</p>
+                <p><strong>Assumptions:</strong> Distress, refugees, fugitives, or technical failure</p>
             </div>
             
             <div class="scenario-box">
                 <h3>Scenario 2: Safe Landing</h3>
-                <p><strong>Indicators:</strong> Controlled descent, intact vessel, deliberate landing location selection</p>
-                <p><strong>Assumptions:</strong> Intentional contact, potentially peaceful intent, prepared for interaction</p>
-                <p><strong>Primary Concerns:</strong> Understanding intent, establishing communication, diplomatic protocols</p>
+                <p><strong>Indicators:</strong> Controlled descent, intact vessel, deliberate location</p>
+                <p><strong>Assumptions:</strong> Intentional contact, potentially peaceful</p>
             </div>
             
             <h3>Location Variables</h3>
-            <p>Adjust response based on landing location:</p>
-            <ul>
-                <li><strong>Urban:</strong> High population density, infrastructure concerns, rapid response availability</li>
-                <li><strong>Rural:</strong> Isolation, slower response times, easier containment</li>
-                <li><strong>Coastal/Beach:</strong> Naval response, water contamination risks, tourism considerations</li>
-                <li><strong>Forest:</strong> Fire hazards, difficult access, environmental impact</li>
-                <li><strong>Desert:</strong> Extreme conditions, minimal infrastructure, remote location</li>
-                <li><strong>Mountains:</strong> Difficult terrain, altitude considerations, limited access</li>
-            </ul>
+            <p><strong>Adjust protocols based on:</strong> Urban, Rural, Coastal, Forest, Desert, or Mountain terrain</p>
         </section>
         
         <section id="immediate">
             <h2>Phase 1: Immediate Response (0-2 Hours)</h2>
             
-            <div class="phase">
-                <div class="phase-title">🚨 First Responder Actions</div>
-                
-                <h3>Initial Alert</h3>
-                <div class="critical">
-                    <strong>CRITICAL COMMUNICATION TIP:</strong> When calling emergency services, report as "non-commercial aircraft with no identifying markings has crashed" to avoid being dismissed as a prank. Provide specific details only after responders are dispatched.
-                </div>
-                
-                <h4>Information to Provide:</h4>
-                <ul>
-                    <li>Precise location (GPS coordinates, longitude/latitude)</li>
-                    <li>Time and date of incident</li>
-                    <li>Description of craft (size, shape, condition)</li>
-                    <li>Observable hazards (fire, smoke, unusual emissions)</li>
-                    <li>Number of visible occupants (if any)</li>
-                    <li>Specific landmarks or identifying features nearby</li>
-                    <li>Current weather conditions</li>
-                </ul>
-                
-                <h4>Emergency Services to Alert:</h4>
-                <ul>
-                    <li>Local law enforcement</li>
-                    <li>Fire department</li>
-                    <li>Paramedics/EMS</li>
-                    <li>Local military (Army, Air Force, Space Force)</li>
-                    <li>Navy/Coast Guard (if coastal or at sea)</li>
-                </ul>
-                
-                <h3>Airspace Control</h3>
-                <ul>
-                    <li>Establish no-fly zone immediately</li>
-                    <li>Ground all civilian aircraft, drones, and helicopters in vicinity</li>
-                    <li>Prevent mid-air collisions or interference</li>
-                    <li>Deploy air defense on standby (hold fire per rules of engagement)</li>
-                </ul>
-                
-                <h3>Perimeter Security</h3>
-                <h4>Law Enforcement Responsibilities:</h4>
-                <ul>
-                    <li>Form immediate perimeter around site (minimum 100m radius, adjust based on hazards)</li>
-                    <li>Secure scene and prevent civilian access</li>
-                    <li>DO NOT FIRE unless fired upon</li>
-                    <li>Document all civilians present (witnesses, recordings)</li>
-                    <li>Prevent souvenir hunters and debris collection</li>
-                </ul>
-                
-                <div class="critical">
-                    <strong>CIVILIAN HAZARD WARNING:</strong> Curious civilians will gather and film. Some may attempt to approach the site or collect debris. Broken parts may leak radiation, toxic gases, or unknown hazardous materials. Enforce perimeter strictly.
-                </div>
-                
-                <h3>Fire and Hazard Response</h3>
-                <h4>Fire Department Actions:</h4>
-                <ul>
-                    <li>Extinguish fires in surrounding area</li>
-                    <li>Deploy HAZMAT teams with detection equipment</li>
-                    <li>Be alert for radiation, toxic gases, or unknown fluids leaking from craft</li>
-                    <li>Use drones for aerial reconnaissance to minimize human exposure</li>
-                    <li>Establish exclusion zones based on contamination risk</li>
-                </ul>
-                
-                <h3>Medical Response</h3>
-                <h4>Paramedic/EMS Protocols:</h4>
-                <ul>
-                    <li><strong>Priority:</strong> Treat injured humans only</li>
-                    <li><strong>DO NOT</strong> treat injured aliens if biological - risk of foreign bacteria/viruses</li>
-                    <li>If aliens appear humanoid, wear full hazmat suits before approach</li>
-                    <li>Establish decontamination stations for exposed humans</li>
-                    <li>Document all human-alien contact incidents</li>
-                </ul>
+            <div class="critical">
+                <strong>COMMUNICATION TIP:</strong> Report as "non-commercial aircraft with no markings" to avoid being dismissed as prank. Provide GPS coordinates, time, date, and observable hazards.
             </div>
             
-            <div class="phase">
-                <div class="phase-title">🔬 Environmental Assessment</div>
-                
-                <h3>Contamination Protocols</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Hazard Type</th>
-                            <th>Detection Method</th>
-                            <th>Response Team</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Biological</strong></td>
-                            <td>Air samples, biosensors</td>
-                            <td>CDC/WHO equivalent, quarantine teams</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Chemical</strong></td>
-                            <td>Air quality monitoring, spectrometry</td>
-                            <td>HAZMAT specialists, chemical engineers</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Radiological</strong></td>
-                            <td>Geiger counters, radiation badges</td>
-                            <td>Nuclear safety teams, radiation specialists</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Unknown</strong></td>
-                            <td>Full spectrum analysis</td>
-                            <td>Assume worst-case until proven otherwise</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <h4>Planetary Protection Principle:</h4>
-                <p><strong>Dual concern:</strong> Prevent Earth contamination from alien biology AND prevent contamination of alien biology from Earth microorganisms.</p>
-                
-                <h3>Documentation Requirements</h3>
-                <ul>
-                    <li>Continuous video/audio recording from multiple angles</li>
-                    <li>Preserve all physical evidence (impact patterns, debris field, heat signatures)</li>
-                    <li>Weather conditions and atmospheric readings</li>
-                    <li>Spectral analysis of any emissions</li>
-                    <li>Magnetic field measurements</li>
-                    <li>Soil and vegetation samples from impact area</li>
-                    <li>Timestamped photo documentation before any disturbance</li>
-                    <li>Secure "black box" equivalents if present</li>
-                </ul>
+            <h3>Alert Emergency Services</h3>
+            <ul>
+                <li>Local law enforcement, fire, paramedics</li>
+                <li>Military (Army, Air Force, Space Force, Navy if coastal)</li>
+            </ul>
+            
+            <h3>Airspace Control</h3>
+            <ul>
+                <li>Establish no-fly zone immediately</li>
+                <li>Ground civilian aircraft, drones, helicopters</li>
+                <li>Deploy air defense on standby (hold fire)</li>
+            </ul>
+            
+            <h3>Perimeter Security</h3>
+            <ul>
+                <li>Form 100m+ perimeter (adjust for hazards)</li>
+                <li>DO NOT FIRE unless fired upon</li>
+                <li>Prevent civilian access and debris collection</li>
+                <li>Document witnesses and recordings</li>
+            </ul>
+            
+            <h3>Fire & Hazard Response</h3>
+            <ul>
+                <li>Extinguish fires with caution</li>
+                <li>Deploy HAZMAT teams with detection equipment</li>
+                <li>Use drones for reconnaissance</li>
+                <li>Monitor for radiation, toxic gases, unknown fluids</li>
+            </ul>
+            
+            <h3>Medical Response</h3>
+            <div class="critical">
+                <strong>TREAT HUMANS ONLY.</strong> DO NOT treat injured aliens - risk of foreign pathogens. If aliens appear humanoid, wear full hazmat suits.
             </div>
             
-            <div class="phase">
-                <div class="phase-title">📞 Chain of Command Notification</div>
-                
-                <h3>Domestic Notifications (Priority Order):</h3>
-                <ol>
-                    <li>Head of State/Government</li>
-                    <li>National Security Advisor</li>
-                    <li>Space Agency Director (NASA/ESA equivalent)</li>
-                    <li>Chief Scientist/Science Advisor</li>
-                    <li>Public Health Authority Director</li>
-                    <li>Intelligence Services Chiefs</li>
-                    <li>Secretary of Defense/Defense Minister</li>
-                </ol>
-                
-                <h3>International Notifications (Immediate):</h3>
-                <ul>
-                    <li>UN Secretary-General</li>
-                    <li>UN Security Council Permanent Members</li>
-                    <li>UN Office for Outer Space Affairs (UNOOSA)</li>
-                    <li>International Astronomical Union (IAU)</li>
-                    <li>World Health Organization (WHO) - biological concerns</li>
-                    <li>International Atomic Energy Agency (IAEA) - radiation concerns</li>
-                </ul>
-                
-                <h3>Military Handover</h3>
-                <p>Once military arrives on scene:</p>
-                <ul>
-                    <li>Local emergency services hand over site control</li>
-                    <li>Military establishes command structure</li>
-                    <li>Continue civilian crowd control and perimeter security</li>
-                    <li>Brief military command on all observations and actions taken</li>
-                    <li>Provide all documentation and recordings</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section id="scenarios">
-            <h2>Phase 2: Scenario-Specific Protocols (2-6 Hours)</h2>
+            <h3>Environmental Assessment</h3>
+            <table>
+                <tr>
+                    <th>Hazard</th>
+                    <th>Detection</th>
+                    <th>Response</th>
+                </tr>
+                <tr>
+                    <td>Biological</td>
+                    <td>Biosensors</td>
+                    <td>Quarantine teams</td>
+                </tr>
+                <tr>
+                    <td>Chemical</td>
+                    <td>Air monitoring</td>
+                    <td>HAZMAT specialists</td>
+                </tr>
+                <tr>
+                    <td>Radiological</td>
+                    <td>Geiger counters</td>
+                    <td>Radiation teams</td>
+                </tr>
+                <tr>
+                    <td>Unknown</td>
+                    <td>Full spectrum</td>
+                    <td>Assume worst-case</td>
+                </tr>
+            </table>
             
-            <div class="scenario-box">
-                <h3>Scenario 1: Crashed Ship - Additional Protocols</h3>
-                
-                <h4>Assumptions:</h4>
-                <ul>
-                    <li>Occupants may be injured or in distress</li>
-                    <li>Potential refugees or fugitives</li>
-                    <li>Ship may be damaged and unstable</li>
-                    <li>Communication systems possibly impaired</li>
-                </ul>
-                
-                <h4>Priority Actions:</h4>
-                <ul>
-                    <li>Assess structural stability of craft</li>
-                    <li>Determine if occupants are alive</li>
-                    <li>Identify immediate life-threatening hazards</li>
-                    <li>Prepare for potential rescue operation (with full contamination protocols)</li>
-                    <li>Monitor for distress signals or communication attempts</li>
-                </ul>
-                
-                <h4>Time-Sensitive Concerns:</h4>
-                <ul>
-                    <li>Ship self-destruct mechanisms</li>
-                    <li>Rapidly spreading contamination</li>
-                    <li>Deteriorating life support for occupants</li>
-                    <li>Structural collapse risk</li>
-                </ul>
-            </div>
+            <h3>Documentation</h3>
+            <ul>
+                <li>Continuous multi-angle video/audio</li>
+                <li>Preserve impact patterns, debris field</li>
+                <li>Weather, atmospheric, spectral readings</li>
+                <li>Soil and vegetation samples</li>
+                <li>Timestamped photos before disturbance</li>
+            </ul>
             
-            <div class="scenario-box">
-                <h3>Scenario 2: Safe Landing - Additional Protocols</h3>
-                
-                <h4>Assumptions:</h4>
-                <ul>
-                    <li><strong>CRITICAL:</strong> Assume peaceful intent unless demonstrated otherwise</li>
-                    <li>Beings capable of interstellar travel likely did not come to invade</li>
-                    <li>Communication systems likely functional</li>
-                    <li>Occupants prepared for interaction</li>
-                </ul>
-                
-                <h4>Priority Actions:</h4>
-                <ul>
-                    <li><strong>WAIT and OBSERVE</strong> - Let aliens make first move</li>
-                    <li>Listen for communication attempts</li>
-                    <li>Maintain non-threatening posture</li>
-                    <li>Prepare communication teams immediately</li>
-                    <li>Document all actions and signals from craft</li>
-                </ul>
-                
-                <h4>What NOT to Do:</h4>
-                <ul>
-                    <li>Do not approach uninvited</li>
-                    <li>Do not make sudden movements</li>
-                    <li>Do not aim weapons (defensive positions only)</li>
-                    <li>Do not use loud noises or bright lights aggressively</li>
-                    <li>Do not attempt to board craft</li>
-                </ul>
-            </div>
+            <h3>Chain of Command Notification</h3>
+            <p><strong>Domestic:</strong> Head of State, National Security, Space Agency, Chief Scientist, Public Health, Intelligence</p>
+            <p><strong>International:</strong> UN Secretary-General, Security Council, UNOOSA, IAU, WHO, IAEA</p>
+            
+            <h3>Military Handover</h3>
+            <p>Local emergency services hand over to military command with full briefing and documentation.</p>
         </section>
         
         <section id="containment">
-            <h2>Phase 3: Biological & Technological Containment (6-24 Hours)</h2>
+            <h2>Phase 2: Containment (2-24 Hours)</h2>
             
-            <div class="phase">
-                <div class="phase-title">🧬 Biological Protocols</div>
-                
-                <h3>Biohazard Containment</h3>
-                <div class="critical">
-                    <strong>ASSUME UNKNOWN PATHOGENS:</strong> No direct contact without Level A or Level B hazmat suits with SCBA (Self-Contained Breathing Apparatus).
-                </div>
-                
-                <h4>For Biological Aliens:</h4>
-                <ul>
-                    <li>Deploy mobile quarantine laboratories</li>
-                    <li>Collect biological samples using remote or robotic systems where possible</li>
-                    <li>Test for cross-species microbial compatibility before ANY treatment</li>
-                    <li>Monitor for airborne pathogens in surrounding area</li>
-                    <li>Establish quarantine perimeter (CDC pandemic protocols)</li>
-                </ul>
-                
-                <h4>For Human-Appearing Aliens:</h4>
-                <ul>
-                    <li>Maintain full hazmat protocols</li>
-                    <li>Assume different biochemistry despite appearance</li>
-                    <li>Test for compatibility before physical contact</li>
-                    <li>Monitor for allergic or immune responses</li>
-                </ul>
-                
-                <h3>Medical Ethics for Injured Aliens</h3>
-                <ul>
-                    <li>Defer treatment to xenobiologists and bioethicists</li>
-                    <li>Establish communication before attempting intervention</li>
-                    <li>Avoid invasive procedures until consent established</li>
-                    <li>Consider alien medical needs may be radically different</li>
-                    <li>Document all medical decisions and ethical considerations</li>
-                </ul>
-                
-                <h3>Human Health Monitoring</h3>
-                <ul>
-                    <li>Document vaccination status of all responders</li>
-                    <li>Establish decontamination stations</li>
-                    <li>Prepare medical isolation facilities</li>
-                    <li>Psychological support for witnesses (trauma response)</li>
-                    <li>Long-term health monitoring of all exposed individuals</li>
-                </ul>
+            <h3>Biological Protocols</h3>
+            <div class="critical">
+                <strong>ASSUME UNKNOWN PATHOGENS.</strong> No direct contact without Level A/B hazmat suits with SCBA.
             </div>
             
-            <div class="phase">
-                <div class="phase-title">🛠️ Technology Containment</div>
-                
-                <h3>Technology Safety Protocols</h3>
-                <div class="critical">
-                    <strong>TREAT ALL ALIEN TECHNOLOGY AS POTENTIALLY HAZARDOUS:</strong> Unknown power sources, AI systems, defensive mechanisms, or self-destruct capabilities may be present.
-                </div>
-                
-                <h4>Isolation Procedures:</h4>
-                <ul>
-                    <li>Use Faraday cages for electronic components</li>
-                    <li>EM shielding for all removed devices</li>
-                    <li>Prohibit civilian or unauthorized handling of debris</li>
-                    <li>Scan for radiation, unusual energy emissions</li>
-                    <li>Document power sources and propulsion systems</li>
-                </ul>
-                
-                <h4>Sample Collection:</h4>
-                <ul>
-                    <li>Collect ship hull material samples</li>
-                    <li>Soil samples from impact/landing area</li>
-                    <li>Atmospheric samples near craft</li>
-                    <li>Any visible fuel or propellant residue</li>
-                    <li>Document all collection with chain of custody</li>
-                </ul>
+            <h4>For Biological Aliens:</h4>
+            <ul>
+                <li>Deploy mobile quarantine labs</li>
+                <li>Remote/robotic sample collection</li>
+                <li>Test cross-species compatibility before treatment</li>
+                <li>Monitor airborne pathogens</li>
+            </ul>
+            
+            <h4>Medical Ethics:</h4>
+            <ul>
+                <li>Defer to xenobiologists and bioethicists</li>
+                <li>Establish communication before intervention</li>
+                <li>Avoid invasive procedures without consent</li>
+                <li>Consider radically different medical needs</li>
+            </ul>
+            
+            <h4>Human Health:</h4>
+            <ul>
+                <li>Document responder vaccination status</li>
+                <li>Establish decontamination stations</li>
+                <li>Medical isolation facilities ready</li>
+                <li>Psychological support for witnesses</li>
+                <li>Long-term monitoring of exposed individuals</li>
+            </ul>
+            
+            <h3>Technology Containment</h3>
+            <div class="critical">
+                <strong>TREAT ALL TECH AS HAZARDOUS:</strong> Unknown power sources, AI, defensive mechanisms, or self-destruct capabilities possible.
             </div>
+            
+            <ul>
+                <li>Faraday cages for electronics</li>
+                <li>EM shielding for devices</li>
+                <li>Prohibit unauthorized debris handling</li>
+                <li>Scan for radiation and energy emissions</li>
+                <li>Collect hull, soil, atmospheric samples</li>
+                <li>Document with chain of custody</li>
+            </ul>
+            
+            <h3>Scenario-Specific Actions</h3>
+            
+            <h4>Crashed Ship:</h4>
+            <ul>
+                <li>Assess structural stability</li>
+                <li>Determine if occupants alive</li>
+                <li>Identify life-threatening hazards</li>
+                <li>Monitor for self-destruct, spreading contamination</li>
+                <li>Prepare rescue with contamination protocols</li>
+            </ul>
+            
+            <h4>Safe Landing:</h4>
+            <ul>
+                <li><strong>WAIT and OBSERVE</strong> - Let aliens initiate</li>
+                <li>Assume peaceful intent unless proven otherwise</li>
+                <li>Maintain non-threatening posture</li>
+                <li>Listen for communication attempts</li>
+                <li>Do not approach, make sudden moves, or aim weapons</li>
+            </ul>
         </section>
         
         <section id="communication">
-            <h2>Phase 4: Communication & Intent Assessment (12-48 Hours)</h2>
+            <h2>Phase 3: Communication (12-48 Hours)</h2>
             
-            <div class="phase">
-                <div class="phase-title">📡 Communication Teams</div>
-                
-                <h3>Expert Deployment Matrix</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Communication Mode</th>
-                            <th>Required Experts</th>
-                            <th>Priority Level</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Radio signals</td>
-                            <td>Cryptographers, Signal Analysts</td>
-                            <td>Immediate</td>
-                        </tr>
-                        <tr>
-                            <td>Visual glyphs/symbols</td>
-                            <td>Linguists, Semioticians</td>
-                            <td>Immediate</td>
-                        </tr>
-                        <tr>
-                            <td>Mathematical sequences</td>
-                            <td>Mathematicians, Cryptographers</td>
-                            <td>High</td>
-                        </tr>
-                        <tr>
-                            <td>Sonic vibrations</td>
-                            <td>Bioacousticians, Linguists</td>
-                            <td>High</td>
-                        </tr>
-                        <tr>
-                            <td>Behavioral gestures</td>
-                            <td>Cognitive Scientists, Ethnographers</td>
-                            <td>High</td>
-                        </tr>
-                        <tr>
-                            <td>Chemical signals</td>
-                            <td>Biochemists, Sensory Scientists</td>
-                            <td>Medium</td>
-                        </tr>
-                        <tr>
-                            <td>Quantum entanglement</td>
-                            <td>Physicists, Quantum Information Experts</td>
-                            <td>Medium</td>
-                        </tr>
-                        <tr>
-                            <td>Digital/AI interface</td>
-                            <td>AI Specialists, Computer Scientists</td>
-                            <td>High (if detected)</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <h3>Layered Communication Approach</h3>
-                
-                <h4>Layer 1: Signal Decoding (Hours 0-12)</h4>
-                <ul>
-                    <li>Cryptographers and signal analysts</li>
-                    <li>Identify communication attempts</li>
-                    <li>Decode raw signals</li>
-                    <li>Establish if communication is intentional</li>
-                </ul>
-                
-                <h4>Layer 2: Language & Structure (Hours 12-36)</h4>
-                <ul>
-                    <li>Linguists and semioticians</li>
-                    <li>Identify patterns and grammar</li>
-                    <li>Determine symbolic meaning</li>
-                    <li>Build translation framework</li>
-                </ul>
-                
-                <h4>Layer 3: Intent & Response (Hours 36-72)</h4>
-                <ul>
-                    <li>Cognitive scientists</li>
-                    <li>Diplomats and ethicists</li>
-                    <li>Psychologists</li>
-                    <li>Determine intent and appropriate response</li>
-                </ul>
-                
-                <h3>Universal Communication Protocols</h3>
-                
-                <h4>Initial "Do No Harm" Signals:</h4>
-                <ul>
-                    <li><strong>Mathematics:</strong> Prime numbers, Fibonacci sequence, π</li>
-                    <li><strong>Chemistry:</strong> Periodic table, hydrogen line (21 cm wavelength)</li>
-                    <li><strong>Physics:</strong> Speed of light, Planck's constant</li>
-                    <li><strong>Biology:</strong> DNA helix structure</li>
-                    <li><strong>Astronomy:</strong> Solar system diagram, pulsar map</li>
-                </ul>
-                
-                <h4>Multi-Modal Translation Systems:</h4>
-                <ul>
-                    <li>Audio (various frequencies)</li>
-                    <li>Visual (lights, symbols, Arecibo-style pictograms)</li>
-                    <li>Tactile (vibrations, pressure patterns)</li>
-                    <li>Chemical (if applicable)</li>
-                    <li>Mathematical (universal language)</li>
-                </ul>
-                
-                <h4>What to Avoid:</h4>
-                <ul>
-                    <li>Threatening gestures or postures</li>
-                    <li>Loud noises (may be perceived as aggression)</li>
-                    <li>Bright flashing lights (potential sensory overload)</li>
-                    <li>Physical contact without consent</li>
-                    <li>Assumptions about sensory capabilities</li>
-                </ul>
-                
-                <div class="critical">
-                    <strong>REMEMBER:</strong> Aliens may communicate via EM spectrum, chemical signals, or sensory modes humans cannot naturally perceive. Maintain redundant recording across all possible spectra.
-                </div>
-            </div>
+            <h3>Communication Expert Matrix</h3>
+            <table>
+                <tr>
+                    <th>Mode</th>
+                    <th>Experts</th>
+                </tr>
+                <tr>
+                    <td>Radio signals</td>
+                    <td>Cryptographers, Signal Analysts</td>
+                </tr>
+                <tr>
+                    <td>Visual glyphs</td>
+                    <td>Linguists, Semioticians</td>
+                </tr>
+                <tr>
+                    <td>Mathematical sequences</td>
+                    <td>Mathematicians, Cryptographers</td>
+                </tr>
+                <tr>
+                    <td>Sonic vibrations</td>
+                    <td>Bioacousticians, Linguists</td>
+                </tr>
+                <tr>
+                    <td>Behavioral gestures</td>
+                    <td>Cognitive Scientists, Ethnographers</td>
+                </tr>
+                <tr>
+                    <td>Chemical signals</td>
+                    <td>Biochemists, Sensory Scientists</td>
+                </tr>
+                <tr>
+                    <td>Quantum entanglement</td>
+                    <td>Physicists, Quantum Experts</td>
+                </tr>
+                <tr>
+                    <td>Digital/AI interface</td>
+                    <td>AI Specialists, Computer Scientists</td>
+                </tr>
+            </table>
             
-            <div class="phase">
-                <div class="phase-title">🔬 Scientific Assessment Team</div>
-                
-                <h3>Required Specialists:</h3>
-                <ul>
-                    <li><strong>Astrobiologists</strong> - Assess life form classification</li>
-                    <li><strong>Xenobiologists/Exobiologists</strong> - Study alien biology and physiology</li>
-                    <li><strong>Medical Doctors</strong> - Human safety and potential pathogen assessment</li>
-                    <li><strong>Engineers</strong> - Analyze technology, propulsion systems</li>
-                    <li><strong>Materials Scientists</strong> - Study hull composition and materials</li>
-                    <li><strong>AI/Computer Scientists</strong> - Interface with potential AI systems</li>
-                    <li><strong>Psychologists</strong> - Assess cognitive patterns, witness mental health</li>
-                    <li><strong>Anthropologists/Sociologists</strong> - Cultural implications and social impact</li>
-                    <li><strong>Physicists</strong> - Study energy systems and propulsion</li>
-                    <li><strong>Chemists</strong> - Analyze chemical composition and reactions</li>
-                </ul>
-            </div>
+            <h3>Three-Layer Approach</h3>
+            <p><strong>Layer 1 (0-12h):</strong> Signal decoding - identify and decode raw signals</p>
+            <p><strong>Layer 2 (12-36h):</strong> Language structure - patterns, grammar, symbolic meaning</p>
+            <p><strong>Layer 3 (36-72h):</strong> Intent assessment - cognitive scientists, diplomats, ethicists</p>
+            
+            <h3>Universal Communication</h3>
+            <p><strong>Initial signals:</strong> Prime numbers, periodic table, hydrogen line (21cm), speed of light, DNA helix, solar system diagram</p>
+            
+            <p><strong>Multi-modal systems:</strong> Audio (various frequencies), visual (lights, pictograms), tactile (vibrations), chemical, mathematical</p>
+            
+            <p><strong>Avoid:</strong> Threatening gestures, loud noises, flashing lights, physical contact without consent</p>
+            
+            <h3>Scientific Assessment Team</h3>
+            <ul>
+                <li>Astrobiologists, Xenobiologists, Medical Doctors</li>
+                <li>Engineers, Materials Scientists, AI/Computer Scientists</li>
+                <li>Psychologists, Anthropologists, Sociologists</li>
+                <li>Physicists, Chemists</li>
+            </ul>
         </section>
         
         <section id="diplomatic">
-            <h2>Phase 5: Diplomatic Engagement (48+ Hours)</h2>
+            <h2>Phase 4: Diplomatic Engagement (48+ Hours)</h2>
             
-            <div class="phase">
-                <div class="phase-title">🌍 International Coordination</div>
-                
-                <h3>Transfer to International Authority</h3>
-                <p>Once peaceful intent is established, transfer primary liaison duties to:</p>
+            <h3>Transfer to International Authority</h3>
+            <p>Once peaceful intent established, transfer to UN Office for Outer Space Affairs (UNOOSA), IAU, or designated international body.</p>
+            
+            <h3>Critical Legal Questions</h3>
+            <ul>
+                <li><strong>Sovereignty:</strong> Landing nation or UN jurisdiction?</li>
+                <li><strong>Legal Status:</strong> Prisoners, guests, refugees, or diplomats?</li>
+                <li><strong>Property Rights:</strong> Technology ownership and salvage rights</li>
+                <li><strong>Information Sharing:</strong> What's classified vs. public?</li>
+                <li><strong>War Powers:</strong> First contact or invasion?</li>
+            </ul>
+            
+            <h3>Treaty Framework</h3>
+            <p>Draft provisional Interstellar Contact Charter covering sovereignty, technology exchange, biological safety, cultural respect.</p>
+            
+            <h3>Public Communication Strategy</h3>
+            <ul>
+                <li>Designated spokesperson only - avoid information chaos</li>
+                <li>Prepare for social media explosion</li>
+                <li>Counter misinformation quickly with facts</li>
+                <li>Balance transparency with security concerns</li>
+                <li>Coordinate with religious leaders for public calming</li>
+                <li>Provide multilingual communications</li>
+                <li>Manage psychological impact and prevent mass panic</li>
+                <li>Address economic concerns and market stability</li>
+            </ul>
+        </section>
+        
+        <section id="longterm">
+            <h2>Phase 5: Long-Term Management</h2>
+            
+            <h3>Secure Facility Requirements</h3>
+            <ul>
+                <li>Controlled environment (not a prison)</li>
+                <li>Life support customization: atmosphere composition, temperature, pressure, humidity</li>
+                <li>Determine food and sustenance needs</li>
+                <li>Medical monitoring equipment</li>
+                <li>Communication systems for ongoing dialogue</li>
+                <li>Cultural accommodation spaces</li>
+            </ul>
+            
+            <h3>Infrastructure Development</h3>
+            <ul>
+                <li>Dedicated international coordination center</li>
+                <li>Translation and interpretation systems</li>
+                <li>Secure communication channels (encrypted, monitored)</li>
+                <li>Scientific research facilities</li>
+                <li>Diplomatic meeting spaces</li>
+                <li>Media briefing center</li>
+            </ul>
+            
+            <h3>Cultural Exchange Programs</h3>
+            <ul>
+                <li>Establish xeno-cultural learning centers</li>
+                <li>Facilitate artistic exchange and expression</li>
+                <li>Enable scientific collaboration and knowledge sharing</li>
+                <li>Promote philosophical and ethical dialogue</li>
+                <li>Document cultural practices and customs</li>
+                <li>Develop mutual understanding protocols</li>
+            </ul>
+            
+            <h3>Technology Assessment and Ethics</h3>
+            <ul>
+                <li>Ethical review of reverse-engineering possibilities</li>
+                <li>Technology transfer agreements and protocols</li>
+                <li>Intellectual property considerations</li>
+                <li>Economic impact assessment (job displacement, industry disruption)</li>
+                <li>Military technology restrictions</li>
+                <li>Public vs. classified technology decisions</li>
+                <li>Scientific publication ethics and peer review</li>
+            </ul>
+            
+            <h3>Legal and Rights Framework</h3>
+            <ul>
+                <li>Define alien rights and legal protections</li>
+                <li>Establish responsibilities and obligations</li>
+                <li>Develop inter-species law under UN jurisdiction</li>
+                <li>Create dispute resolution mechanisms</li>
+                <li>Address citizenship and residency questions</li>
+                <li>Protect against exploitation or harm</li>
+            </ul>
+            
+            <h3>Historical Documentation</h3>
+            <ul>
+                <li>Comprehensive archival of all contact events</li>
+                <li>Multiple redundant storage systems</li>
+                <li>Translation into multiple Earth languages</li>
+                <li>Preservation for future generations</li>
+                <li>Academic access protocols</li>
+                <li>Public education materials development</li>
+            </ul>
+            
+            <h3>If Aliens Depart</h3>
+            <ul>
+                <li>Document all events leading to departure</li>
+                <li>Establish future communication protocols</li>
+                <li>Exchange contact information or beacons</li>
+                <li>Long-term monitoring for potential return</li>
+                <li>Assess and study any left-behind materials or technology</li>
+                <li>Evaluate environmental impact of visit</li>
+                <li>Analyze lessons learned for future contacts</li>
+            </ul>
+        </section>
+        
+        <section id="special">
+            <h2>Special Scenarios and Edge Cases</h2>
+            
+            <h3>Multiple Simultaneous Landing Sites</h3>
+            <ul>
+                <li>Activate international coordination immediately</li>
+                <li>Establish real-time information sharing between sites</li>
+                <li>Develop unified communication strategy across locations</li>
+                <li>Pool scientific and technical resources</li>
+                <li>Compare behavioral patterns across sites</li>
+                <li>Coordinate diplomatic responses</li>
+                <li>Prevent conflicting national policies</li>
+            </ul>
+            
+            <h3>Hostile Intent Indicators</h3>
+            <p><strong>Warning signs to monitor:</strong></p>
+            <ul>
+                <li>Unprovoked weapons discharge</li>
+                <li>Aggressive approach patterns toward population centers</li>
+                <li>Deliberate ignoring of communication attempts</li>
+                <li>Deployment of biological or chemical weapons</li>
+                <li>Attacking emergency responders or civilians</li>
+                <li>Forcible abduction of humans</li>
+                <li>Destruction of infrastructure without provocation</li>
+            </ul>
+            
+            <p><strong>Escalation Response Matrix:</strong></p>
+            <ol>
+                <li>Attempt communication and de-escalation</li>
+                <li>Defensive posture only - protect civilians</li>
+                <li>Establish defensive perimeter</li>
+                <li>Coordinate with military command</li>
+                <li>Activate global defense protocols if necessary</li>
+                <li>Document all actions for international review</li>
+            </ol>
+            
+            <h3>Mass Arrival Event (Fleet Scenario)</h3>
+            <ul>
+                <li>Detect orbital insertion patterns</li>
+                <li>Track multiple craft trajectories</li>
+                <li>Predict potential landing zones</li>
+                <li>Prepare for simultaneous multi-site response</li>
+                <li>Raise defense readiness levels appropriately</li>
+                <li>Activate population evacuation protocols for high-risk areas</li>
+                <li>Establish global coordination center</li>
+                <li>Maintain calm - avoid assuming hostile intent</li>
+            </ul>
+            
+            <h3>Time-Critical Emergency Situations</h3>
+            
+            <h4>Ship Self-Destruct Countdown:</h4>
+            <ul>
+                <li>Immediate evacuation of area</li>
+                <li>Attempt to communicate and understand intent</li>
+                <li>Deploy bomb disposal experts if safe</li>
+                <li>Establish maximum safety perimeter</li>
+                <li>Document for later analysis</li>
+            </ul>
+            
+            <h4>Rapidly Spreading Contamination:</h4>
+            <ul>
+                <li>Activate pandemic-level containment protocols</li>
+                <li>Establish quarantine zones immediately</li>
+                <li>Deploy biohazard response teams</li>
+                <li>Track contamination spread patterns</li>
+                <li>Coordinate with WHO and CDC equivalents</li>
+            </ul>
+            
+            <h4>Critical Alien Injuries Requiring Immediate Care:</h4>
+            <ul>
+                <li>Assess if intervention is safe for humans</li>
+                <li>Attempt to understand alien medical needs</li>
+                <li>Use remote/robotic systems if possible</li>
+                <li>Consult xenobiologists before action</li>
+                <li>Balance humanitarian concerns with safety</li>
+            </ul>
+            
+            <h3>Psychological and Social Management</h3>
+            
+            <h4>For First Responders and Personnel:</h4>
+            <ul>
+                <li>Pre-training for incomprehensible or shocking situations</li>
+                <li>On-site psychological support staff</li>
+                <li>Stress management and debriefing protocols</li>
+                <li>Clear decision-making frameworks reduce panic</li>
+                <li>Rotation schedules to prevent burnout</li>
+                <li>Long-term mental health monitoring</li>
+            </ul>
+            
+            <h4>For General Population:</h4>
+            <ul>
+                <li>Public education campaigns (NASA/ESA outreach programs)</li>
+                <li>Coordinate with religious and spiritual leaders</li>
+                <li>Provide philosophical counseling resources</li>
+                <li>Implement economic stability measures</li>
+                <li>Prevent financial market panic</li>
+                <li>Address existential and identity questions</li>
+                <li>Combat conspiracy theories with facts</li>
+            </ul>
+            
+            <h3>Unexpected Alien Forms</h3>
+            
+            <h4>Non-Biological Entities (AI, Robots, Probes):</h4>
+            <ul>
+                <li>Adjust protocols for non-living intelligence</li>
+                <li>Focus on computational and electronic communication</li>
+                <li>Consider different ethical frameworks</li>
+                <li>Assess autonomous vs. controlled behavior</li>
+            </ul>
+            
+            <h4>Microscopic or Non-Corporeal Beings:</h4>
+            <ul>
+                <li>Develop detection methods for unusual life forms</li>
+                <li>Adapt containment for non-physical entities</li>
+                <li>Reconsider communication approaches</li>
+                <li>Consult theoretical physicists and biologists</li>
+            </ul>
+            
+            <h4>Collective/Hive Mind Entities:</h4>
+            <ul>
+                <li>Identify if dealing with individual or collective</li>
+                <li>Adapt diplomatic protocols for group consciousness</li>
+                <li>Determine decision-making structure</li>
+                <li>Respect collective vs. individual rights</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Critical Gaps and Recommendations</h2>
+            
+            <div class="critical">
+                <strong>URGENT NEED: INTERNATIONAL RAPID RESPONSE CAPABILITY</strong>
+                <p>Current protocols assume local emergency response. We need pre-positioned or rapidly deployable international teams similar to:</p>
                 <ul>
-                    <li>UN Office for Outer Space Affairs (UNOOSA)</li>
-                    <li>International Astronomical Union (IAU)</li>
-                    <li>Designated international diplomatic body</li>
+                    <li><strong>IAEA:</strong> Emergency response for nuclear incidents</li>
+                    <li><strong>WHO:</strong> Rapid response for pandemic outbreaks</li>
+                    <li><strong>UN:</strong> Peacekeeping rapid deployment forces</li>
                 </ul>
-                
-                <h3>Legal & Diplomatic Considerations</h3>
-                
-                <h4>Immediate Questions:</h4>
-                <ul>
-                    <li><strong>Sovereignty:</strong> Does landing site's nation have jurisdiction? Or is this UN territory?</li>
-                    <li><strong>Legal Status:</strong> Are aliens prisoners, guests, refugees, or diplomats?</li>
-                    <li><strong>Property Rights:</strong> Who owns the alien technology?
+            </div>
+            
+            <h3>Recommended Actions</h3>
+            <ul>
+                <li>Establish UN-coordinated First Contact Response Team (FCRT)</li>
+                <li>Conduct regular simulation drills (similar to pandemic tabletop exercises)</li>
+                <li>Create standardized international communication protocols</li>
+                <li>Develop pre-positioned equipment caches globally</li>
+                <li>Train specialist teams across multiple nations</li>
+                <li>Establish clear chain of command and jurisdiction rules</li>
+                <li>Create information sharing agreements in advance</li>
+                <li>Develop public education materials before an event</li>
+            </ul>
+            
+            <h3>Ongoing Research Needs</h3>
+            <ul>
+                <li>Xenobiology and astrobiology studies</li>
+                <li>Universal communication theory development</li>
+                <li>Ethical frameworks for inter-species interaction</li>
+                <li>Legal precedents for extraterrestrial contact</li>
+                <li>Psychological impact studies</li>
+                <li>Technology assessment methodologies</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p><strong>Alien Arrival Protocol</strong> - Proposed Framework v3.0</p>
+        <p>Based on emergency response, scientific, and diplomatic best practices</p>
+        <p style="margin-top: 1rem; opacity: 0.8;">No official protocol currently exists • This is a citizen-proposed framework</p>
+    </footer>
+</body>
+</html>
